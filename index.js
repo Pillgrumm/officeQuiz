@@ -181,4 +181,4 @@ function enableSubmitButton() {
     enableSubmitButton();
   }
 
-  $(handleQuizFunctions);
+  $('handleQuizFunctions');
