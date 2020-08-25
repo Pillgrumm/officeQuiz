@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width'>
+	<title>The Office Quiz</title>
+	<meta name='description' content='The Office Trivia Quiz.'>
+	  <link rel="stylesheet" href="index.css" />
+	  <style>
+@import url('<link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">');
+</style>
+
+</head>
+<body>
+	<main role='main'>
+		<section id='start-page' class='blackbox'>
+			<div id='title'>
+				<h1>What do you know about Dunder Mifflin?</h1>
+				<img class='pMike'
+				src='https://ih1.redbubble.net/image.484436094.9482/flat,550x550,075,f.u1.jpg'
+				alt='prison mike'>
+				<h3 class='start-text'>Let's see if you know the Office as well as you think you do!<br><br>Click below to start!</h3>
+			</div>
+			<button class='button'>Start</button>
+		</section>
+
+		<section id='question-page' class='hidden blackbox'>
+      <form id='question-form' method='get'>
+        <fieldset name='question-set'>
+          <div id='quiz-question' class='office-question'></div>
+          <div class='office-answers' role='radiogroup'></div>
+          <button id='submit-answer' class='button hidden disabled' type='submit' disabled>Submit</button>
+        </fieldset>
+      </form>
+      <button id='next-question' class='button hidden' type='submit'>Next</button>
+      <div id='feedbackcorrect' class='all-feedback hidden'>
+        <h3> You got it!</h3><br>
+        <img class='woo-right' src = 'https://media2.giphy.com/media/Is1O1TWV0LEJi/giphy.gif?cid=3640f6095bb5360138724b384929148a' alt='celebrate you got it right'></div>
+        <div id='feedbackincorrect' class='hidden'><br></div>
+        <img class='wrong-answer hidden'
+        src='https://media2.giphy.com/media/d10dMmzqCYqQ0/giphy.gif?cid=3640f6095bb537396d324261738d1915' alt='nope! WRONG'>
+        <div class='results-counter'></div>
+		</section>
+
+    <section id='final-page' class='hidden blackbox'>
+      <h1> Well how'd it go?</h1>
+      <div></div> id='final-correct'<br></div>
+      <div>
+        <img class='dance-party'
+        src='https://media2.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif?cid=3640f6095bb5360138724b384929148a' alt='dance party'/><br>
+        <p>Wanna try again? Click below to do so!</p></div>
+        <button id='retake' type='submit'>Do it again!</button>
+    </section>
+
+	</main>
+
+
+	<script src='//code.jquery.com/jquery.min.js'></script>
+  <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+
+    <script src='index.js'></script>
+</body>
+</html>
